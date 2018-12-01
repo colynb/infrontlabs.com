@@ -7,7 +7,7 @@ html
     title InFront Labs, LLC
     link(href="./app.sass" type="text/css" rel="stylesheet")
     link(rel="shortcut icon" type="image/x-icon" href="./favicon.ico")
-
+    link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous")
   body
     include components/hero.pug
 
@@ -47,16 +47,37 @@ html
     .Section
       .container
         h2 The Team
-        p
-          strong Andy Frey (Partner / Sometimes Codes)
-        p Andy has been working in the IT field for over 30 years. He has run the gamut from long-haul, outdoor fiber optic network design to enterprise software development to business development and management. This isn't Andy's first rodeo: He started a web development firm in the Detroit area way back in 1998 and sold it and the rights to a custom-built intranet content management system written in PHP. 
-        p In real life, Andy is a maker, DIY guy, and tinkerer in everything from woodworking to electronics to metalworking to home improvement. He chronicles his DIY adventures at his maker blog Stuff Andy Makes (https://StuffAndyMakes.com). His biggest project to date, The Office Chairiot Mark II, an IKEA chair that goes 20 MPH, has its own website: https://OfficeChairiot.com (seriously, it can do 20 MPH, just not safely).
 
+        .row
+          .col-md-2
+            img.mb-4.rounded-circle(src="./andy.jpeg" alt="Andy Frey" style="margin: 0 auto; width: 120px;")
+          .col-md-10
+            h5.mt-0 Andy Frey <br><small>Partner / Sometimes Codes</small>
+            
+              a.ml-3(href="https://github.com/StuffAndyMakes" style="color: black;" title="Andy's Github" target="_blank")
+                | <i class="fab fa-github"></i>
+              a.ml-3(href="https://twitter.com/stuffandymakes" style="color: black;" title="Andy's Twitter" target="_blank")
+                | <i class="fab fa-twitter"></i>
+              a.ml-3(href="https://www.linkedin.com/in/stuffandymakes/" style="color: black;" title="Andy's LinkedIn" target="_blank")
+                | <i class="fab fa-linkedin"></i>
 
+            div
+              p Andy has been working in the IT field for over 30 years. He has run the gamut from long-haul, outdoor fiber optic network design to enterprise software development to business development and management. This isn't Andy's first rodeo: He started a web development firm in the Detroit area way back in 1998 and sold it and the rights to a custom-built intranet content management system written in PHP.
+              p In real life, Andy is a maker, DIY guy, and tinkerer in everything from woodworking to electronics to metalworking to home improvement. He chronicles his DIY adventures at his maker blog Stuff Andy Makes (<a href="https://StuffAndyMakes.com" target="_blank">https://StuffAndyMakes.com</a>). His biggest project to date, The Office Chairiot Mark II, an IKEA chair that goes 20 MPH, has its own website: <a href="https://OfficeChairiot.com" target="_blank">https://OfficeChairiot.com</a> (seriously, it can do 20 MPH, just not safely). 
 
-        p
-          strong Colyn Brown (Partner / Solutions Architect)
-        p A father, a husband, and designing and developing web sites since 1995. As an avid user and consumer of the web, his focus as a developer has always been on ensuring the best possible user experience and keeping things as simple as possible. Engineering is a means to an end. His means of production are Javascript (vanilla, ReactJS, VueJS), NodeJS (ExpressJS), PHP (Laravel), playing banjo, and CSS. <em>Step 3: you profit.</em>
+        .row.mt-5
+          .col-md-2
+            img.mb-4.rounded-circle(src="./colyn.jpeg" alt="Colyn Brown"  style="margin: 0 auto; width: 120px;")
+          .col-md-10
+            h4.mt-0 Colyn Brown <br><small>Partner / Solutions Architect</small>
+              a.ml-3(href="https://github.com/colynb" style="color: black;" title="Colyn's Github" target="_blank")
+                | <i class="fab fa-github"></i>
+              a.ml-3(href="https://www.linkedin.com/in/colyn/" style="color: black;" title="Colyn's LinkedIn" target="_blank")
+                | <i class="fab fa-linkedin"></i>
+            div
+              p A father, a husband, and designing and developing web sites since 1995. As an avid user and consumer of the web, his focus as a developer has always been on ensuring the best possible user experience and keeping things as simple as possible. Engineering is a means to an end. His means of production are Javascript (vanilla, ReactJS, VueJS), NodeJS (ExpressJS), PHP (Laravel), playing banjo, and CSS. <em>Step 3: you profit.</em>
+              
+
     
     .Section.Section--white
       .container
@@ -71,8 +92,12 @@ html
     
     footer.Footer
       .container
-        a(href="./index.pug")
-          img.Logo--footer(src="./logo.svg")
+        div(style="display: flex; align-items: center; margin-bottom: 20px;")
+          a.mr-5(href="./index.pug")
+            img.Logo--footer(src="./logo.svg")
+          a(href="https://github.com/infrontlabs" style="color: white; font-size: 1.5em; display: flex; align-items: center;" title="Github" target="_blank")
+            i.fab.fa-github
+            small.ml-2(style="font-size: 12px;") open source stuff
 
         p
           |InFront Labs, LLC is a software development firm located in the Phoenix, AZ metro area. InFront specializes in the design and development of websites, mobile apps, and custom software applications.
