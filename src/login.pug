@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title The Vintary
+    link(href="./app.sass" type="text/css" rel="stylesheet")
+  body
+    div.LoginPage
+      div.LoginPanel
+        div.LoginPanel__Logo
+          img.Logo---Burgandy(src="./logo-burgandy.svg")
+        div.LoginPanel__Title Sign in to your Vintary account
+        p Don’t have an account?&nbsp;
+          a(href="./create-account.pug") Create one.
+
+        div.form-group
+          input.form-control(type="text" placeholder="Email")
+        div.form-group
+          input.form-control(type="password" placeholder="Password")
+        
+        div.form-group
+          a(href="#") Forgot password?
+
+        button.btn.btn-primary.btn-block Sign In
+        a.btn.btn-primary.btn-link.btn-block(href="/") Cancel
