@@ -55,14 +55,30 @@ h1, h2, h3, h4, h5
   font-size: 1em
 
 .Testimonial
+  line-height: 1.6
+
   @media (min-width: 992px)
     padding: 40px 60px
     border-radius: 20px
-    border: solid 1px #eee
 
   &__Quote
-    color: #666
+    font-family: Georgia, "Times New Roman", Times, serif
+    color: #333
     font-size: 1.3em
+    position: relative
+
+    .large
+      color: $primary
+      font-size: 5em
+      position: absolute
+      top: -70px
+      left: -50px
+      font-weight: 600
+      opacity: 0.25
+      z-index: 0
 
   &__Attribution
     margin: 20px 0 0 0
+
+    strong
+      color: $primary

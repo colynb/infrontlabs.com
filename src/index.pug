@@ -26,12 +26,13 @@ html
               div.Panel__Body
                 h3 Contact Us
                 p P.O. Box 8385<br>Scottsdale, AZ 85257
-                p
-                  strong
-                    a(href="tel:480-999-9286") (480) 999-9286
-                p
-                  strong
-                    a(href="mailto:hello@infrontlabs.com") hello@infrontlabs.com
+                div 
+                  i.fa.fa-mobile-alt(style="opacity: .5")  &nbsp;&nbsp; 
+                  a(href="tel:480-999-9286") (480) 999-9286
+                  
+                div
+                  i.fa.fa-at(style="opacity: .5")  &nbsp; 
+                  a(href="mailto:hello@infrontlabs.com") hello@infrontlabs.com
     .Section.Section--white
       .container
         h2 Services
@@ -83,21 +84,23 @@ html
       .container
         .Testimonial
           p.Testimonial__Quote
+            em.large “
             em 
-              | "The InFront team has been great to work with. We have been working on multiple projects over the past year and they continue to bring great results in a timely and affordable way. When Colyn and Andy put their heads together, they always seem to come up with creative and impressive solutions."
+              | The InFront team has been great to work with. We have been working on multiple projects over the past year and they continue to bring great results in a timely and affordable way. When Colyn and Andy put their heads together, they always seem to come up with creative and impressive solutions.
           p.Testimonial__Attribution
-            strong <i class="fas fa-building"></i> Chris Kinghorn - DataStreet (Partner)
+            strong Chris Kinghorn <br>
+            small DataStreet (Partner)
 
-    .Section
-      .container
-        h2 Contact Us
-        p P.O. Box 8385, Scottsdale, AZ 85257
-        p
-          strong
-            a(href="tel:480-999-9286") (480) 999-9286
-        p
-          strong
-            a(href="mailto:hello@infrontlabs.com") hello@infrontlabs.com
+    //- .Section
+    //-   .container
+    //-     h2 Contact Us
+    //-     p P.O. Box 8385, Scottsdale, AZ 85257
+    //-     p
+    //-       strong
+    //-         a(href="tel:480-999-9286") (480) 999-9286
+    //-     p
+    //-       strong
+    //-         a(href="mailto:hello@infrontlabs.com") hello@infrontlabs.com
     
     footer.Footer
       .container
