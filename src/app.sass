@@ -1,7 +1,7 @@
-$primary: #275ab5
-$secondary: #4a4a4a
+$primary: #1f364a
+$secondary: #DF9546
 $grid-gutter-width: 35px
-$burgandy: #a1373a
+$burgandy: #3E67CF
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700")
 
@@ -11,15 +11,19 @@ $burgandy: #a1373a
 @import ./components/panels
 @import ./components/hero
 
+.navbar.navbar--transparent
+  background: none
+
 .navbar
-  background: none !important
+  background: $primary
   margin-bottom: 20px
 
-  .phone
+  .nav-link
     font-size: 1.5em
+    color: white
 
 body
-  background-color: #EEF4FE
+  background-color: #fff
   font-family: "Open Sans", sans-serif
   font-size: 16px
 
@@ -43,6 +47,9 @@ h1, h2, h3, h4, h5
 
   &--white
     background-color: white
+
+  &--highlighted
+    background-color: #eee
 
   h2
     color: $primary

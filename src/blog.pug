@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title InFront Labs, LLC
+    link(href="./app.sass" type="text/css" rel="stylesheet")
+    link(rel="shortcut icon" type="image/x-icon" href="./favicon.ico")
+    link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous")
+  body
+
+    nav.navbar.navbar-expand-lg
+      include components/navbar.pug
+
+    div.Section
+      .container
+        h1 Blog    
+    
+    footer.Footer
+      .container
+        div(style="display: flex; align-items: center; margin-bottom: 20px;")
+          a.mr-5(href="./index.pug")
+            img.Logo--footer(src="./logo.svg")
+          a(href="https://github.com/infrontlabs" style="color: white; font-size: 1.5em; display: flex; align-items: center;" title="Github" target="_blank")
+            i.fab.fa-github
+            small.ml-2(style="font-size: 12px;") open source stuff
+
+        p
+          |InFront Labs, LLC is a software development firm located in the Phoenix, AZ metro area. InFront specializes in the design and development of websites, mobile apps, and custom software applications.

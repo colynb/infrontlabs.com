@@ -9,6 +9,7 @@ html
     link(rel="shortcut icon" type="image/x-icon" href="./favicon.ico")
     link(rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-j8y0ITrvFafF4EkV1mPW0BKm6dp3c+J9Fky22Man50Ofxo2wNe5pT1oZejDH9/Dt" crossorigin="anonymous")
   body
+    
     include components/hero.pug
 
     div.Section
@@ -33,8 +34,9 @@ html
                 div
                   i.fa.fa-at(style="opacity: .5")  &nbsp; 
                   a(href="mailto:hello@infrontlabs.com") hello@infrontlabs.com
-    .Section.Section--white
+    .Section.Section--highlighted
       .container
+        a(name="services")
         h2 Services
         p
           strong Website Design and Development
@@ -48,6 +50,7 @@ html
 
     .Section
       .container
+        a(name="team")
         h2 The Team
 
         .row
@@ -80,7 +83,7 @@ html
               p Colyn has been designing and developing web sites since 1997. As an avid user and consumer of the web, his focus as a developer has always been on ensuring the best possible user experience and keeping things as simple as possible. His means of production are Javascript (vanilla, ReactJS, VueJS), NodeJS (ExpressJS), PHP (Laravel), playing banjo, and CSS. <em>Step 3: you profit.</em>
               
 
-    .Section.Section--white
+    .Section.Section--highlighted
       .container
         .Testimonial
           p.Testimonial__Quote
@@ -106,7 +109,7 @@ html
       .container
         div(style="display: flex; align-items: center; margin-bottom: 20px;")
           a.mr-5(href="./index.pug")
-            img.Logo--footer(src="./logo.svg")
+            img.Logo--footer(src="./infront-logo2.svg")
           a(href="https://github.com/infrontlabs" style="color: white; font-size: 1.5em; display: flex; align-items: center;" title="Github" target="_blank")
             i.fab.fa-github
             small.ml-2(style="font-size: 12px;") open source stuff
